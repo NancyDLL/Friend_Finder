@@ -1,6 +1,6 @@
 // ===============================================================================
-// DEPENDENCIES
-// We need to include the path package to get the correct file path for our html
+// DEPENDENCIES - From Hot Restraurant Example
+// Include the path package to get the correct file path
 // ===============================================================================
 var path = require("path");
 
