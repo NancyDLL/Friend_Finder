@@ -159,7 +159,7 @@
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+		        <p><a href="../data/friends">Friends List</a></p>
 	      </div>
 	    </footer>
 
@@ -234,8 +234,8 @@
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
 
-	    	// AJAX post the data to the friends API. 
-	    	$.post(currentURL + "/api/friends", userData, function(data){
+	    	// AJAX post the data to the friends route. 
+	    	$.post(currentURL + "/data/friends", userData, function(data){
 
 	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 	    		$("#matchName").text(data.name);
