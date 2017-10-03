@@ -2,7 +2,7 @@
 // LOAD DATA - From Hot Restraurant Example
 // Linking routes to the friend "data" source.
 // ===============================================================================
-var friends = require("../data/friends");
+var friends = require("/app/data/friends");
 
 
 // ===============================================================================
@@ -11,7 +11,7 @@ var friends = require("../data/friends");
 module.exports = function(app) {
   // API GET Request
   // ---------------------------------------------------------------------------
-  app.get("/data/friends", function(req, res) {
+  app.get("../app/data/friends", function(req, res) {
     res.json(friends);
   });
 
@@ -24,6 +24,6 @@ module.exports = function(app) {
   // Then the server saves the data to the tableData array)
   // ---------------------------------------------------------------------------
 
-  app.post("/data/friends", function(req, res) {
+  app.post("../app/data/friends", function(req, res) {
   // will handle the incoming survey results and compatibility logic
   });
