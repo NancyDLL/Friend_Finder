@@ -32,13 +32,13 @@ module.exports = function(app) {
       var match = {
         name: "",
         photo: "",
-        difference: 1000
+        difference: 500
       };
 
       for (var i = 0; i < friends.length; i++) {
         var totalDifference = 0;
-        for (var x = 0; x < userResponse.length; x++) {
-          totalDifference += Math.abs(friends[i].scores[x] - userResponse[x]);
+        for (var j = 0; j < userResponse.length; j++) {
+          totalDifference += Math.abs(friends[i].scores[j] - userResponse[j]);
           
           if (totalDifference <= match.difference){
               match.name = friends[i].name;

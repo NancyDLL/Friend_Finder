@@ -159,7 +159,7 @@
 		<hr>
 	    <footer class="footer">
 	      <div class="container">
-		        <p><a href="/data/friends">Friends List</a> | <a href="https://github.com/NancyDLL/Friend_Finder">GitHub Repo</a></p>
+		        <p><a href="/api/friends">Friends List</a> | <a href="https://github.com/NancyDLL/Friend_Finder">GitHub Repo</a></p>
 	      </div>
 	    </footer>
 
@@ -249,7 +249,7 @@
 
 	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 	    		$("#matchName").text(data.name);
-	    		$('#matchImg').attr("src", data.photo);
+	    		$("#matchImg").attr("src", data.photo);
 
 		    	// Show the modal with the best match 
 		    	$("#resultsModal").modal('toggle');
